@@ -1,0 +1,76 @@
+.custom-bg {
+  background-color: rgba(91, 91, 91, 0.36);
+}
+
+.footer-bg {
+  background-color: #fab365;
+}
+
+.font-burger {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.add-button {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-container {
+  position: relative;
+  /* Ensures the overlay is positioned relative to this container */
+  overflow: hidden;
+  /* Clips content that overflows the bounds of this element */
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  /* Black background with transparency */
+  backdrop-filter: blur(10px);
+  /* Blurs the background under the overlay */
+  border-radius: 15px;
+  /* Rounds the corners */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Light border around the overlay */
+  padding: 20px;
+  /* Padding inside the overlay */
+  position: absolute;
+  /* Positions the overlay on top of the image */
+  bottom: 20px;
+  /* Position the overlay slightly above the bottom of the container */
+  left: 50%;
+  /* Centers the overlay horizontally */
+  transform: translate(-50%, 80%);
+  /* Centers the overlay and moves it slightly up */
+  text-align: center;
+  /* Centers text inside overlay */
+  width: 90%;
+  /* Sets the width of the overlay */
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffb800;
+  text-decoration: underline;
+}
+
+.order-btn {
+  /* background-color: #fab365; */
+  font-family: "Poppins", sans-serif;
+}
+
+.font-hero {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Add this to your custom CSS file */
+body {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #000);
+}
+
+.btns {
+  background-color: rgb(64, 66, 71);
+  font-family: "Poppins", sans-serif;
+}
