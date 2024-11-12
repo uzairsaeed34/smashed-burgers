@@ -1,234 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      /* Custom animation */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    /* Custom animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
       }
 
-      .fade-in {
-        animation: fadeIn 2s ease-in-out;
+      to {
+        opacity: 1;
       }
-    </style>
+    }
 
-<title>SMASH'D UP BURGERS</title>
-<link rel="icon" href="burger-2.png" type="image/png">    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+  </style>
 
-  <body class="bg-black text-white">
-    <!-- Header -->
-    <header class="container p-4 flex items-center justify-between">
-      <!-- Logo on the left -->
-      <div class="flex items-center">
-        <img src="/logo.png" alt="Logo" class="lg:h-32   lg:w-32 h-20 w-20" />
-      </div>
+  <title>SMASH'D UP BURGERS</title>
+  <link rel="icon" href="burger-2.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <!-- Navigation centered -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
-        <nav class="space-x-6 text-white flex">
-            <a href="./index.html" class="hover:text-yellow-500 mx-4">Home</a>
-            <a href="./info.html" class="hover:text-yellow-500 mx-4">About us</a>
-        </nav>
+<body class="bg-black text-white">
+  <!-- Header -->
+  <header class="container p-4 flex items-center justify-between">
+    <!-- Logo on the left -->
+    <div class="flex items-center">
+      <img src="/logo.png" alt="Logo" class="lg:h-32   lg:w-32 h-20 w-20" />
     </div>
 
-      <!-- Empty div to maintain space for the right side elements -->
-      <div class="flex items-center invisible">
-        <button class="text-white focus:outline-none">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-
-      <div class="md:hidden flex items-center">
-        <button id="menu-btn" class="text-white focus:outline-none">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-transparent p-4 mt-0">
-      <nav class="flex flex-col space-y-4">
-        <a
-          href="./index.html"
-          class="block text-center py-2 px-4 text-white rounded hover:bg-gray-600"
-          >Home</a
-        >
-
-        <a
-          href="./info.html"
-          class="block text-center py-2 px-4 text-white rounded hover:bg-gray-600"
-          >About us</a
-        >
-
-        
-          </div>
-     
-    <!-- Hero Section -->
-
-    <div
-      class="fade-in flex flex-col md:flex-row items-center justify-center p-6 md:p-12 bg-transparent"
-    >
-      <!-- Left Side: Image -->
-
-      <!-- Right Side: Text Content -->
-      <div class="md:w-1/2 w-full text-center md:text-left md:pl-10">
-        <h2 class="text-3xl font-bold mb-4 lg:ml-52 text-yellow-400">
-          SMASH’D UP
-        </h2>
-        <p class="text-white text-xl mb-4">
-          Founded by three individuals with a deep passion for burgers, Smash'd
-          Up Burgers is the result of a shared dream to bring a new level of
-          burger dining to Malta.
-        </p>
-        <p class="text-white mb-6">
-          Join us at Smash'd Up Burgers, where your perfect burger is just a few
-          steps away!
-        </p>
-
-       
-      </div>
+    <!-- Navigation centered -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
+      <nav class="space-x-6 text-white flex">
+        <a href="./index.html" class="hover:text-yellow-500 mx-4">Home</a>
+        <a href="./info.html" class="hover:text-yellow-500 mx-4">About us</a>
+      </nav>
     </div>
 
-    <hr class="mt-10 opacity-20" />
-    <!-- Menu Section -->
-    <div class="container mx-auto py-12 px-4">
-      <!-- Heading -->
-      <h2 class="text-3xl font-bold text-yellow-500 fade-in text-center mb-8">
-        Our Owners
+    <!-- Empty div to maintain space for the right side elements -->
+    <div class="flex items-center invisible">
+      <button class="text-white focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="md:hidden flex items-center">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-transparent p-4 mt-0">
+    <nav class="flex flex-col space-y-4">
+      <a href="./index.html" class="block text-center py-2 px-4 text-white rounded hover:bg-gray-600">Home</a>
+
+      <a href="./info.html" class="block text-center py-2 px-4 text-white rounded hover:bg-gray-600">About us</a>
+
+
+  </div>
+
+  <!-- Hero Section -->
+
+  <div class="fade-in flex flex-col md:flex-row items-center justify-center p-6 md:p-12 bg-transparent">
+    <!-- Left Side: Image -->
+
+    <!-- Right Side: Text Content -->
+    <div class="md:w-1/2 w-full text-center md:text-left md:pl-10">
+      <h2 class="text-3xl font-bold mb-4 lg:ml-52 text-yellow-400">
+        SMASH’D UP
       </h2>
+      <p class="text-white text-xl mb-4">
+        Founded by three individuals with a deep passion for burgers, Smash'd
+        Up Burgers is the result of a shared dream to bring a new level of
+        burger dining to Malta.
+      </p>
+      <p class="text-white mb-6">
+        Join us at Smash'd Up Burgers, where your perfect burger is just a few
+        steps away!
+      </p>
 
-      <!-- Cards Container -->
-      <div class="flex flex-wrap justify-center gap-6">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Owner 1"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl text-black font-semibold">
-              Jonathan Santambrogio
-            </h3>
-            <p class="text-gray-600">CEO & Founder</p>
-          </div>
+
+    </div>
+  </div>
+
+  <hr class="mt-10 opacity-20" />
+  <!-- Menu Section -->
+  <div class="container mx-auto py-12 px-4">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-yellow-500 fade-in text-center mb-8">
+      Our Owners
+    </h2>
+
+    <!-- Cards Container -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
+        <img src="/1.jpg" alt="Owner 1" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl text-black font-semibold">
+            Jonathan Santambrogio
+          </h3>
+          <p class="text-gray-600">CEO & Founder</p>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Owner 2"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl text-black font-semibold">Stina Tufvesson</h3>
-            <p class="text-gray-600">CEO & Founder</p>
-          </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
+        <img src="/2.jpg" alt="Owner 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl text-black font-semibold">Stina Tufvesson</h3>
+          <p class="text-gray-600">CEO & Founder</p>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Owner 3"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl text-black font-semibold">Louis Hadfield</h3>
-            <p class="text-gray-600">CEO & Founder</p>
-          </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden w-72">
+        <img src="/3.jpg" alt="Owner 3" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl text-black font-semibold">Louis Hadfield</h3>
+          <p class="text-gray-600">CEO & Founder</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer-bg text-black p-6">
-      <div class="container mx-auto flex flex-col md:flex-row">
-        <!-- Left Side -->
-        <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-          <!-- Contact Information -->
-          <div class="flex flex-col">
-            <h4 class="font-bold mb-2 text-lg md:text-xl">Contact</h4>
-            <p class="text-sm md:text-base">
-              <i class="fas fa-map-marker-alt"></i> 2 St. George's road, Saint
-              Julian, Malta
-            </p>
-            <p class="text-sm md:text-base">
-              <i class="fas fa-phone-alt"></i> +012 345 67890
-            </p>
-            <p class="text-sm md:text-base">
-              <i class="fas fa-envelope"></i> info@smashedupburgers.com
-            </p>
-          </div>
-        </div>
-
-        <!-- Right Side -->
-        <div class="w-full md:w-1/2 px-4">
-          <!-- Work Hours -->
-          <div class="flex flex-col mb-6 text-center md:text-left">
-            <h4 class="font-bold mb-2 text-lg md:text-xl">Work Hours</h4>
-            <p class="text-sm md:text-base">
-              <i class="fas fa-clock"></i> Monday - Saturday: 9AM - 9PM
-            </p>
-            <p class="text-sm md:text-base">
-              <i class="fas fa-clock"></i> Sunday: 10AM - 8PM
-            </p>
-          </div>
-
-          <!-- Social Media Icons -->
-          <div class="flex space-x-4 justify-center md:justify-start">
-            <a href="#" class="text-black text-xl md:text-2xl"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="#" class="text-black text-xl md:text-2xl"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-black text-xl md:text-2xl"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="#" class="text-black text-xl md:text-2xl"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </div>
+  <!-- Footer -->
+  <footer class="footer-bg text-black p-6">
+    <div class="container mx-auto flex flex-col md:flex-row">
+      <!-- Left Side -->
+      <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+        <!-- Contact Information -->
+        <div class="flex flex-col">
+          <h4 class="font-bold mb-2 text-lg md:text-xl">Contact</h4>
+          <p class="text-sm md:text-base">
+            <i class="fas fa-map-marker-alt"></i> 2 St. George's road, Saint
+            Julian, Malta
+          </p>
+          <p class="text-sm md:text-base">
+            <i class="fas fa-phone-alt"></i> +012 345 67890
+          </p>
+          <p class="text-sm md:text-base">
+            <i class="fas fa-envelope"></i> info@smashedupburgers.com
+          </p>
         </div>
       </div>
-    </footer>
 
-    <script>
-      // Mobile menu toggle
-      document
-        .getElementById("menu-btn")
-        .addEventListener("click", function () {
-          const menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
-        });
-    </script>
-  </body>
+      <!-- Right Side -->
+      <div class="w-full md:w-1/2 px-4">
+        <!-- Work Hours -->
+        <div class="flex flex-col mb-6 text-center md:text-left">
+          <h4 class="font-bold mb-2 text-lg md:text-xl">Work Hours</h4>
+          <p class="text-sm md:text-base">
+            <i class="fas fa-clock"></i> Monday - Saturday: 9AM - 9PM
+          </p>
+          <p class="text-sm md:text-base">
+            <i class="fas fa-clock"></i> Sunday: 10AM - 8PM
+          </p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4 justify-center md:justify-start">
+          <a href="#" class="text-black text-xl md:text-2xl"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-black text-xl md:text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-black text-xl md:text-2xl"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-black text-xl md:text-2xl"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document
+      .getElementById("menu-btn")
+      .addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      });
+  </script>
+</body>
+
 </html>
